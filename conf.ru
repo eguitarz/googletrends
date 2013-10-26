@@ -1,7 +1,7 @@
 require 'sinatra/base'
 
 module App
-	class Core < Sinatra::Base		
+	class Core < Sinatra::Base
 		set :root, File.dirname(__FILE__)
 	  set :static, true
 	  set :public_folder, ->{ root }
